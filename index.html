@@ -195,9 +195,9 @@
         
                       <div class="periodical">
                       
-                        <em>In Proc. of the International Conf. on 3D Vision (3DV)</em>
+                        <em>In Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR) 2025</em>
                       
-                        2022
+                        2024
                       
                       </div>
             
@@ -206,22 +206,16 @@
                       
                         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
 
-                        <a href="https://www.cvlibs.net/publications/Fu2022THREEDV.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+                        <a href="https://arxiv.org/pdf/2411.19292" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
                   
-                        <a href="https://github.com/fuxiao0719/PanopticNeRF" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Code</a>
-                    
-                        <a href="https://www.cvlibs.net/publications/Fu2022THREEDV_poster.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Poster</a>
-                  
-                        <a href="https://fuxiao0719.github.io/projects/panopticnerf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Website</a>
-                      
-                      <a href="https://www.youtube.com/watch?v=5QKTeFLciWo" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Video</a>
+                        <a href="https://xdimlab.github.io/UrbanCAD/" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Website</a>
                       
                       </div>
         
                       <!-- Hidden abstract block -->
                       
                       <div class="abstract hidden">
-                        <p>Large-scale training data with high-quality annotations is critical for training semantic and instance segmentation models. Unfortunately, pixel-wise annotation is labor-intensive and costly, raising the demand for more efficient labeling strategies. In this work, we present a novel 3D-to-2D label transfer method, Panoptic NeRF, which aims for obtaining per-pixel 2D semantic and instance labels from easy-to-obtain coarse 3D bounding primitives. Our method utilizes NeRF as a differentiable tool to unify coarse 3D annotations and 2D semantic cues transferred from existing datasets. We demonstrate that this combination allows for improved geometry guided by semantic information, enabling rendering of accurate semantic maps across multiple views. Furthermore, this fusion process resolves label ambiguity of the coarse 3D annotations and filters noise in the 2D predictions. By inferring in 3D space and rendering to 2D labels, our 2D semantic and instance labels are multi-view consistent by design. Experimental results show that Panoptic NeRF outperforms existing label transfer methods in terms of accuracy and multi-view consistency on challenging urban scenes of the KITTI-360 dataset.</p>
+                        <p>Photorealistic 3D vehicle models with high controllability are essential for autonomous driving simulation and data augmentation. While handcrafted CAD models provide flexible controllability, free CAD libraries often lack the high-quality materials necessary for photorealistic rendering. Conversely, reconstructed 3D models offer high-fidelity rendering but lack controllability. In this work, we introduce UrbanCAD, a framework that pushes the frontier of the photorealism-controllability trade-off by generating highly controllable and photorealistic 3D vehicle digital twins from a single urban image and a large collection of free 3D CAD models and handcrafted materials. These digital twins enable realistic 360$^\circ$ rendering, vehicle insertion, material transfer, relighting, and component manipulation such as opening doors and rolling down windows, supporting the construction of long-tail scenarios. To achieve this, we propose a novel pipeline that operates in a retrieval-optimization manner, adapting to observational data while preserving fine-grained handcrafted properties including component-level controllability, complex material physical properties, interior geometry, and detailed material assignment. Furthermore, given multi-view background perspective and fisheye images, we approximate environment lighting using fisheye images and reconstruct the background with 3DGS, enabling the photorealistic insertion of optimized CAD models into rendered novel view backgrounds. Experimental results demonstrate that UrbanCAD outperforms baselines based on reconstruction and retrieval in terms of photorealism. Additionally, we show that various perception models maintain their accuracy when evaluated on UrbanCAD with in-distribution configurations but degrade when applied to realistic out-of-distribution data generated by our method. This suggests that UrbanCAD is a significant advancement in creating photorealistic, safety-critical driving scenarios for downstream applications.</p>
                       </div>
             
         
