@@ -1,48 +1,48 @@
-# LingBot-World 2.0 publication card design
+# LingBot-World 2.0 论文卡片设计
 
-## Goal
+## 目标
 
-Add LingBot-World 2.0 to the top of the homepage's **Selected Publications** list while preserving the site's existing visual and interaction patterns.
+将 LingBot-World 2.0 添加到主页 **Selected Publications** 列表的首位，同时保持网站现有的视觉样式和交互方式。
 
-## Source of truth
+## 权威信息来源
 
-Use the public `Robbyant/lingbot-world-v2` repository and arXiv record `2607.07534` as the authoritative sources:
+以公开的 `Robbyant/lingbot-world-v2` 仓库和 arXiv 记录 `2607.07534` 为权威信息来源：
 
-- Paper title: **Infinite Worlds with Versatile Interactions**
-- Project name: **LingBot-World 2.0** / **LingBot-World-Infinity**
-- Venue label: **arXiv 2026**
-- Project page: `https://technology.robbyant.com/lingbot-world-v2`
-- Code: `https://github.com/Robbyant/lingbot-world-v2`
-- Paper: `https://arxiv.org/pdf/2607.07534`
-- Thumbnail source: `assets/teaser.png` from the project repository
-- Authors: use the arXiv ordering and render Yichong Lu as the highlighted homepage owner
+- 论文标题：**Infinite Worlds with Versatile Interactions**
+- 项目名称：**LingBot-World 2.0** / **LingBot-World-Infinity**
+- 发表信息标签：**arXiv 2026**
+- 项目主页：`https://technology.robbyant.com/lingbot-world-v2`
+- 代码仓库：`https://github.com/Robbyant/lingbot-world-v2`
+- 论文链接：`https://arxiv.org/pdf/2607.07534`
+- 缩略图来源：项目仓库中的 `assets/teaser.png`
+- 作者：采用 arXiv 中的作者顺序，并在主页中突出显示 Yichong Lu
 
-## Approaches considered
+## 已考虑的方案
 
-1. **Homepage publication card only — approved.** Add one card matching the existing cards, with no additional navigation or page. This is the smallest change and keeps the list chronological.
-2. **Homepage card plus a standalone project page.** This would provide more space for demos, but duplicates the external project page and adds unnecessary maintenance.
-3. **Homepage card plus a News item.** This would increase prominence, but the request is specifically to add a project and does not ask for a news announcement.
+1. **仅新增主页论文卡片——已批准。** 新增一张与现有条目一致的卡片，不增加额外导航或页面。这是改动最小的方案，也能保持列表按时间排序。
+2. **新增主页卡片和独立项目页面。** 这种方案能为演示内容提供更多空间，但会与外部项目主页重复，并带来不必要的维护成本。
+3. **新增主页卡片和 News 条目。** 这种方案能提高项目的可见度，但当前需求仅要求新增项目，并未要求发布新闻公告。
 
-## Approved design
+## 已批准的设计
 
-- Copy the upstream teaser unchanged to `assets/teaser/lingbot-world-v2.png` so the homepage does not depend on GitHub's raw-file availability.
-- Insert a new `<li>` before the current first publication in `index.html`.
-- Follow the existing three-column/nine-column card structure and button styles.
-- Use a unique card id, `Gao2026Arxiv`.
-- Render the exact paper title, complete author list, and `arXiv 2026` periodical label.
-- Highlight `Lu, Yichong` with `<em>`; render the other authors as plain author links without inventing personal-page URLs.
-- Provide the existing `Abs`, `PDF`, `Code`, and `Website` buttons in that order.
-- Populate the hidden abstract block from the arXiv abstract.
-- Use descriptive thumbnail alt text matching the paper title.
-- Do not add an independent page under `projects/`, a News row, new CSS, or new JavaScript.
+- 将上游 teaser 原样复制到 `assets/teaser/lingbot-world-v2.png`，避免主页依赖 GitHub 原始文件的可用性。
+- 在 `index.html` 当前第一篇论文之前插入一个新的 `<li>`。
+- 沿用现有的三栏/九栏卡片结构和按钮样式。
+- 使用唯一的卡片 ID：`Gao2026Arxiv`。
+- 展示准确的论文标题、完整作者列表和 `arXiv 2026` 发表信息标签。
+- 使用 `<em>` 突出显示 `Lu, Yichong`；其他作者使用不带链接地址的普通作者标签，不虚构个人主页 URL。
+- 按顺序提供现有样式的 `Abs`、`PDF`、`Code` 和 `Website` 按钮。
+- 使用 arXiv 摘要填充隐藏的摘要区块。
+- 使用与论文标题一致、具有描述性的缩略图替代文本。
+- 不在 `projects/` 下新增独立页面，不增加 News 条目、CSS 或 JavaScript。
 
-## Verification
+## 验证方式
 
-- Confirm the copied thumbnail is a valid non-empty PNG.
-- Parse `index.html` and verify exactly one `Gao2026Arxiv` card exists before the previous first publication.
-- Verify the card contains the expected title, all four links, `arXiv 2026`, the highlighted `Lu, Yichong`, and the local teaser path.
-- Confirm the repository diff is limited to the design document, `index.html`, and the teaser image.
+- 确认复制后的缩略图是有效且非空的 PNG 文件。
+- 解析 `index.html`，确认其中恰好存在一个 `Gao2026Arxiv` 卡片，并且它位于原先第一篇论文之前。
+- 确认卡片包含预期标题、四个链接、`arXiv 2026`、突出显示的 `Lu, Yichong` 和本地 teaser 路径。
+- 确认仓库差异仅涉及设计文档、`index.html` 和 teaser 图片。
 
-## Acceptance criteria
+## 验收标准
 
-The homepage shows LingBot-World 2.0 first in Selected Publications, visually consistent with existing entries; its thumbnail loads locally; and its PDF, code, project-page, and abstract controls are all present with the correct content.
+主页在 Selected Publications 的首位展示 LingBot-World 2.0，其视觉样式与现有条目一致；缩略图能够从本地正常加载；PDF、代码仓库、项目主页和摘要控件均存在且内容正确。
