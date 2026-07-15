@@ -226,6 +226,28 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 
 .publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
 
+.experience { margin-top: 2rem; margin-bottom: 2rem; }
+
+.experience h2 { display: inline-block; border-bottom: 3px solid var(--global-text-color); padding-bottom: 0.35rem; margin-bottom: 2rem; }
+
+.experience-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.25rem 3rem; }
+
+.experience-item { display: flex; align-items: center; gap: 1.25rem; min-width: 0; }
+
+.experience-logo { width: 58px; height: 58px; object-fit: contain; flex-shrink: 0; }
+
+.experience-info h3 { font-size: 1.35rem; font-weight: 600; margin-bottom: 0.15rem; }
+
+.experience-info h3 a { color: var(--global-text-color); text-decoration: none; }
+
+.experience-info h3 a:hover { color: var(--global-theme-color); }
+
+.experience-role, .experience-advisor, .experience-period { color: var(--global-text-color-light); line-height: 1.45; }
+
+.experience-advisor a { color: var(--global-theme-color); }
+
+@media (max-width: 768px) { .experience-grid { grid-template-columns: 1fr; } }
+
 figure.highlight { margin: 0 0 1rem; }
 
 pre { color: var(--global-theme-color); background-color: var(--global-code-bg-color); border-radius: 6px; padding: 6px 12px; }
