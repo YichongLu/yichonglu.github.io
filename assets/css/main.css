@@ -226,7 +226,9 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 
 .publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
 
-.experience, .academic-services { margin-top: 2rem; margin-bottom: 2rem; }
+.experience { margin-top: 2rem; margin-bottom: 2rem; }
+
+.academic-services { margin-top: 2rem; margin-bottom: 3rem; }
 
 .news > h2, .projects > h2, .publications > h2:not(.year), .academic-services > h2, .awards > h2, .experience > h2 { display: inline-block; border-bottom: 3px solid var(--global-text-color); padding-bottom: 0.35rem; margin-bottom: 2rem; }
 
